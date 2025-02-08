@@ -6,21 +6,32 @@
         "build": "webpack --mode=development --progress --color",
         "build:prod": "webpack --mode=production --progress --color",
         "dev": "webpack --watch --mode=development --progress --color",
-        "clean": "rimraf dist"
+        "clean": "rimraf dist",
+        "server:build": "tsc -p server/tsconfig.json",
+        "server:start": "node dist/server/index.js",
+        "server:dev": "ts-node-dev --respawn --transpile-only server/index.ts"
     },
     "dependencies": {
         "@overwolf/overwolf-api-ts": "^1.3.0",
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "socket.io": "^4.8.1",
+        "socket.io-client": "^4.7.2"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.13.1",
         "@types/react": "^18.2.43",
         "@types/react-dom": "^18.2.17",
         "copy-webpack-plugin": "^11.0.0",
+        "rimraf": "^3.0.2",
         "ts-loader": "^9.5.1",
+        "ts-node-dev": "^2.0.0",
         "typescript": "^5.2.2",
         "webpack": "^5.89.0",
-        "webpack-cli": "^5.1.4",
-        "rimraf": "^3.0.2"
+        "webpack-cli": "^5.1.4"
     }
 }
