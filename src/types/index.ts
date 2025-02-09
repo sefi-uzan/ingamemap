@@ -11,5 +11,6 @@ export interface Room {
 
 // Local storage keys
 export const STORAGE_KEYS = {
-    USER_SETTINGS: 'ingamemap_user_settings'
+    USER_SETTINGS: 'ingamemap_user_settings',
+    CURRENT_ROOM: 'ingamemap_current_room'
 } as const; 

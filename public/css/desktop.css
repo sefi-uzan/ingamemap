@@ -223,3 +223,96 @@ body {
 .save-button:hover {
     background: #3b7fd9;
 }
+
+.error-message {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    color: #ff6b6b;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-error {
+    background: none;
+    border: none;
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+.room-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.room-id {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: monospace;
+    margin-left: 0.5rem;
+}
+
+.copy-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.participants {
+    margin-top: 1.5rem;
+}
+
+.participants h4 {
+    margin: 0 0 1rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.participants ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.participants li {
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.room-join {
+    margin-bottom: 1rem;
+}
